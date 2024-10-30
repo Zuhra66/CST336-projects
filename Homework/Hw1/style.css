@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+    background-color: rgb(154, 125, 242);
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Header, nav, footer */
+header, nav, footer { 
+
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+nav a {
+    padding: 15px;
+    padding-bottom: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+nav a.active {
+    
+    font-size: 1.6em;
+    font-weight: bold; /* Makes the text bold */
+    
+}
+nav a:hover {
+    border-bottom: 2px black;
+    font-size: 2em;
+    transition: .9s;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: center;
+    margin: 40px; 
+    padding: 20px;
+    font-size: 1.2em;
+}
+.content-pair {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.content-pair ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.content-pair img {
+    border: 3px solid #fff;
+    border-radius: 15px;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Space between video and text */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.text-content {
+    max-width: 500px;
+    font-size: 1.2em;
+    color: white;
+    text-align: left;
+}
+#small-text-page .text-content {
+    font-size: 1.1em; 
+}
+
+.img img {
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 5px;
+}
+.styled-video {
+    border: 5px solid #fff;
+    border-radius: 18px;
+    display: block;
+    justify-self: auto;
+    margin-top: 80px; /* Adjust this value to move the video down */
+}
+p::first-letter {
+    font-size: 2.5em; /* Adjust the size as needed */
+    color: #fff; /* You can change the color if desired */
+}
+    
+/* Footer */
+footer {
+    background-color: rgb(154, 125, 242);
+    padding: 20px 0;
+    border-top: 1px solid #fff;
+    text-align: center;
+    font-size: 0.75em;
+    color: white;
+}
